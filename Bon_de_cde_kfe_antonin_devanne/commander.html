@@ -5,13 +5,41 @@
         <title>La Machine à Café Anto de France</title>
     </head>
     <body>
-        <h1>La Machine à café d'Anto de France</h1>
-        <h2>Remplisser le formulaire ci-dessous et cliquez sur Commander</h2>
+        <header>
+            <h1>La Machine à café d'Anto de France</h1>
+            <h2>Remplisser le formulaire ci-dessous et cliquez sur Commander</h2>
+        </header>
 
-        <form>
-            Choisissez votre café :
-            <input type="" name="melange_maison" value="mélange maison"> Mélange maison
+        <form> <!-- début du formulaire -->
+            Choisissez votre café : 
+            <br /><select name="select_box_kfe"> <!-- menu déroulant pour choisir le café -->
+                <option>Mélange maison</option>
+                <option>Bolivie</option>
+                <option>Guatemala</option>
+                <option>Kenya</option>
+            </select><br />
+            Type :
+                <br /><input type="radio" name="kfe_en_grains"> Café en grains <!-- choisir le type de grain avec un bouton selection à choix unique -->
+                <br /><input type="radio" name="kfe_moulu"> Café moulu<br /><br /> <!-- choisir le type de grain avec un bouton selection à choix unique -->
+            Options : 
+                <br /><input type="checkbox" name="paquet_kdo"> Paquet cadeau <!-- choisir les options avec un bouton selectionneur à choix multiple -->
+                <br /><input type="checkbox" name="catalogue"> Joindre un catalogue<br /><br />  <!-- choisir les options avec un bouton selectionneur à choix multiple -->
+            Coordonnées client : 
+                <br />Nom : <input type="text" name="nom"> <!-- zone de text utilisateur -->
+                <br />Adresse : <input type="text" name="adresse">  <!-- zone de text utilisateur -->
+                <br />Ville : <input type="text" name="ville">  <!-- zone de text utilisateur -->
+                <br />Code postal : <input type="text" name="code_postal"><br /><br />  <!-- zone de text utilisateur -->
+            Vos commentaires :
+                <br /><textarea rows="5"></textarea><br /><!-- zone de texte pour un commentaire -->
+                <input type="submit" name="envoyer"> <!-- bouton de validation -->
+                <input type="reset" name="annuler"> <!-- bouton de reset -->
 
-        </form>
+        </form> <!-- fin du formulare -->
+
+        <footer>
+            <p>
+                Tous droits réservés
+            </p>
+        </footer>
     </body>
 </html>
